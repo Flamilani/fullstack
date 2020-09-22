@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cabecalho {
+  background-color: #b2caff;
+  border-radius: 5px;
+  border: 2px solid #05359e;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  color: #003098;
+}
+
+.cabecalho h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.cabecalho h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.titulo {
+  font-weight: bold;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.componente {
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.controle {
+  margin: 15px;
+  margin-bottom: 20px;
+}
+
+.input-valores {
+  width: 60px;
+}
+
+.resultado {
+  border: 1px solid #000;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f1f5f8;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.perfil {
+  margin-right: 10px;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+.redes-sociais img {
+  height: auto;
+  width: 25px;
+}
+
+.redes-sociais a {
+  text-decoration: none;
+}
