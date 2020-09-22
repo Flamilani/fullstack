@@ -6,6 +6,7 @@
     <title>Trabalho Prático do Módulo 1</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="shortcut icon" href="#" />
   </head>
   <body>
     <header>
@@ -17,30 +18,68 @@
 
     <main>
       <div class="componente">
-        <h1 class="titulo">RGB (Range)</h1>
+        <h1 class="titulo">Seletor de Cores RGB (Range)</h1>
         <div class="controle">
+          <label class="left" for="vermelho">(R) Vermelho:</label>
           <div class="controle-range">
-            <label for="vermelho">(R) Vermelho:</label>
-            <input id="vermelho" type="range" max="255" step="1" value="0" />
-            <input class="input-valores" type="number" readonly />
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="red"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input id="valueRed" class="input-valores" type="number" readonly />
           </div>
+          <label class="left" for="verde">(G) Verde:</label>
           <div class="controle-range">
-            <label for="verde">(G) Verde:</label>
-            <input id="verde" type="range" max="255" step="1" value="0" />
-            <input class="input-valores" type="number" readonly />
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="green"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input
+              id="valueGreen"
+              class="input-valores"
+              type="number"
+              readonly
+            />
           </div>
+          <label class="left" for="azul">(B) Azul:</label>
           <div class="controle-range">
-            <label for="azul">(B) Azul:</label>
-            <input id="azul" type="range" max="255" step="1" value="0" />
-            <input class="input-valores" type="number" readonly />
+            <input
+              class="range"
+              onchange="seletorColor()"
+              id="blue"
+              type="range"
+              max="255"
+              step="1"
+              value="0"
+            />
+            <input
+              id="valueBlue"
+              class="input-valores"
+              type="number"
+              readonly
+            />
           </div>
         </div>
-        <div style="background-color: rgb(10, 255, 0)" class="resultado"></div>
+        <div id="box" class="resultado">
+          <div id="title-box">
+            <span id="code"></span>
+          </div>
+        </div>
       </div>
     </main>
 
     <footer>
-      <div class="perfil">Flavio Milani</div>
+      <div class="perfil"><em>Develop by</em> Flavio Milani</div>
       <div class="redes-sociais">
         <a href="https://www.linkedin.com/in/flavio-milani/" target="_blank"
           ><img src="./assets/img/linkedin.png" alt="Linkedin" />
@@ -50,6 +89,6 @@
         </a>
       </div>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

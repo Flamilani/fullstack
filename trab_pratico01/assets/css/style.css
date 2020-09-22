@@ -37,15 +37,16 @@ footer {
 .titulo {
   font-weight: bold;
   text-align: center;
-  background-color: #eee;
+  background-color: #0034a4;
   padding: 10px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  color: #fff;
 }
 
 .componente {
   margin: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #0034a4;
   border-radius: 5px;
 }
 
@@ -58,13 +59,36 @@ footer {
   width: 60px;
 }
 
+.controle-range {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.range {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 .resultado {
   border: 1px solid #000;
-  width: 100px;
-  height: 90px;
+  width: 215px;
+  height: 122px;
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+#title-box {
+  border: 1px solid #999;
+  position: relative;
+  top: 65px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
 }
 
 footer {
@@ -89,4 +113,16 @@ footer {
 
 .redes-sociais a {
   text-decoration: none;
+}
+
+em {
+  font-style: italic;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
